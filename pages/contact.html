@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Thamani Aurum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="ticker-wrap">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+  </div>
+</div>
+
+<nav>
+  <a href="../index.html" class="logo-link"><img src="../public/logo.png" alt="Thamani Aurum" class="logo-image"></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="../index.html#services">Services</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="../index.html#invest">Investors</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero hero-contact">
+  <h1>Get in Touch</h1>
+  <p>Connect with our team of mineral and finance experts</p>
+</header>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <h2 class="section-title">Get in Touch</h2>
+    
+    <form id="contactForm" onsubmit="validateContactForm(event)">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="organization">Organization/Company</label>
+        <input type="text" id="organization" name="organization">
+      </div>
+
+      <div class="form-group">
+        <label>I am interested in: *</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="investor" name="category" value="investor">
+            Investment Opportunity
+          </label>
+          <label>
+            <input type="checkbox" id="partner" name="category" value="partner">
+            Partnership/Collaboration
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g., Lab Services Inquiry, Investment Discussion" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Please tell us about your inquiry..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Which service interests you?</label>
+        <select id="service" name="service">
+          <option value="">-- Select an option --</option>
+          <option value="verification">Verification & Laboratory (Assaying)</option>
+          <option value="production">Production (Mining Partnerships)</option>
+          <option value="refining">Refining (Bullion Production)</option>
+          <option value="liquidity">Liquidity & Trading (Global Markets)</option>
+          <option value="investment">Investment Opportunity</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="submit" class="form-submit">Send Message</button>
+    </form>
+
+    <p style="text-align: center; margin-top: 2rem; color: #666; font-size: 0.9rem;">
+      We typically respond to inquiries within 24-48 business hours.<br>
+      <strong>Email:</strong> <a href="mailto:investor@thamaniaurum.ug" style="color: var(--gold); text-decoration: none;">investor@thamaniaurum.ug</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>ABOUT THAMANI AURUM</h3>
+      <p>The Architecture of Trust in African Minerals. We are the Global Gateway for ethical African gold, ensuring 100% transparency from pit to port.</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>VALUE CHAIN</h3>
+      <ul>
+        <li><a href="../index.html#services">Verification (Lab)</a></li>
+        <li><a href="../index.html#services">Production (Mining)</a></li>
+        <li><a href="../index.html#services">Refining (99.99% Bullion)</a></li>
+        <li><a href="../index.html#services">Liquidity (Global Markets)</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html#invest">Investors</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h3>CONTACT INFO</h3>
+      <p><strong>Email:</strong> <a href="mailto:investor@thamaniaurum.ug">investor@thamaniaurum.ug</a></p>
+      <p><strong>Kampala:</strong> Uganda</p>
+      <p><strong>Entebbe:</strong> Refinery Hub</p>
+      <p><strong>Dubai:</strong> DMCC Trading Desk</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 Thamani Aurum Integrated Metals Group. All Rights Reserved.</p>
+    <p>Compliance-First. Precision-Driven. National Impact.</p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
