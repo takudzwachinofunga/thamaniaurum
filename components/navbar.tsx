@@ -28,19 +28,6 @@ export function Navbar() {
 
   return (
     <>
-      {/* Gold ticker bar */}
-      <div className="w-full bg-navy-dark border-b border-navy-light">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-xs text-slate-text">
-            <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span>XAUUSD Live</span>
-          </div>
-          <div className="text-xs text-gold font-medium tracking-wider">
-            Global Gateway for Ethical African Gold
-          </div>
-        </div>
-      </div>
-
       {/* Main nav */}
       <nav
         className={cn(

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const valueChainLinks = [
   { label: "Verification (Lab)", href: "/services" },
@@ -83,31 +83,28 @@ export function Footer() {
             </h3>
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <a
-                  href="mailto:investor@thamaniaurum.ug"
-                  className="text-slate-text text-sm hover:text-gold-light transition-colors"
-                >
-                  investor@thamaniaurum.ug
-                </a>
-              </div>
-              <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-slate-text text-sm">
                   Kampala, Uganda
                 </span>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-slate-text text-sm">
-                  Entebbe, Refinery Hub
-                </span>
+                <Mail className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
+                <a
+                  href="mailto:enquiries@thamaniaurum.ug"
+                  className="text-slate-text text-sm hover:text-gold-light transition-colors"
+                >
+                  enquiries@thamaniaurum.ug
+                </a>
               </div>
               <div className="flex items-start gap-3">
-                <Globe className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-slate-text text-sm">
-                  Dubai, DMCC Trading Desk
-                </span>
+                <Phone className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
+                <a
+                  href="tel:+256747613173"
+                  className="text-slate-text text-sm hover:text-gold-light transition-colors"
+                >
+                  +256747613173
+                </a>
               </div>
             </div>
           </div>

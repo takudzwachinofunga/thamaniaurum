@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Globe, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { AnimateIn } from "@/components/animate-in";
 import { ContactForm } from "@/components/contact-form";
@@ -9,27 +9,6 @@ export const metadata: Metadata = {
   description:
     "Connect with our team of mineral and finance experts. Investment inquiries, partnerships, and collaboration.",
 };
-
-const offices = [
-  {
-    city: "Kampala",
-    country: "Uganda",
-    description: "Headquarters & Laboratory",
-    icon: MapPin,
-  },
-  {
-    city: "Entebbe",
-    country: "Uganda",
-    description: "Refinery Hub",
-    icon: MapPin,
-  },
-  {
-    city: "Dubai",
-    country: "UAE",
-    description: "DMCC Trading Desk",
-    icon: Globe,
-  },
-];
 
 export default function ContactPage() {
   return (
@@ -55,6 +34,19 @@ export default function ContactPage() {
                   Reach Out to Us
                 </h2>
 
+                {/* Address */}
+                <div className="flex items-start gap-4 mb-8">
+                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-gold" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-navy text-sm mb-1">Address</p>
+                    <p className="text-gold text-sm">
+                      Kampala, Uganda
+                    </p>
+                  </div>
+                </div>
+
                 {/* Email */}
                 <div className="flex items-start gap-4 mb-8">
                   <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
@@ -63,47 +55,28 @@ export default function ContactPage() {
                   <div>
                     <p className="font-bold text-navy text-sm mb-1">Email</p>
                     <a
-                      href="mailto:investor@thamaniaurum.ug"
+                      href="mailto:enquiries@thamaniaurum.ug"
                       className="text-gold text-sm hover:text-gold-light transition-colors"
                     >
-                      investor@thamaniaurum.ug
+                      enquiries@thamaniaurum.ug
                     </a>
                   </div>
                 </div>
 
-                {/* Offices */}
-                <p className="font-bold text-navy text-sm mb-4">
-                  Our Offices
-                </p>
-                <div className="flex flex-col gap-4">
-                  {offices.map((office) => (
-                    <div
-                      key={office.city}
-                      className="flex items-start gap-4 p-4 rounded-lg bg-light-grey"
+                {/* Phone */}
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-gold" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-navy text-sm mb-1">Contact</p>
+                    <a
+                      href="tel:+256747613173"
+                      className="text-gold text-sm hover:text-gold-light transition-colors"
                     >
-                      <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                        <office.icon className="w-5 h-5 text-gold" />
-                      </div>
-                      <div>
-                        <p className="font-bold text-navy text-sm">
-                          {office.city}, {office.country}
-                        </p>
-                        <p className="text-navy/50 text-xs">
-                          {office.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 p-6 rounded-xl bg-navy border-l-4 border-gold">
-                  <p className="text-gold font-serif font-bold text-sm mb-2">
-                    Response Time
-                  </p>
-                  <p className="text-slate-text text-sm leading-relaxed">
-                    We typically respond to inquiries within 24-48 business
-                    hours.
-                  </p>
+                      +256747613173
+                    </a>
+                  </div>
                 </div>
               </div>
             </AnimateIn>
