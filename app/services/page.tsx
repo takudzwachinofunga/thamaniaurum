@@ -27,7 +27,7 @@ const services = [
     subtitle: "The Lab",
     image: "/images/laboratory.jpg",
     description:
-      "Our Kampala-based facility utilizes state-of-the-art XRF (X-Ray Fluorescence) technology to provide laboratory-grade purity reports. Every gram undergoes rigorous forensic analysis.",
+      "We offer end-to-end verification from independent scouting, supply chain due diligence, compliance and risk auditing, and general consultation to guarantee risk-averse decisions and transactions.",
     features: [
       "Forensic XRF assaying",
       "Legal due diligence for sellers",
@@ -55,12 +55,12 @@ const services = [
     subtitle: "The Forge",
     image: "/images/refinery.jpg",
     description:
-      "Adhering to the Uganda Mining and Minerals Act 2022, our Entebbe refinery converts raw dore into 99.99% (24K) Investment Grade Bullion meeting international standards.",
+      "Adhering to the Uganda Mining Act, our refinery partner network converts raw ore into 99.99% (24K) Investment Grade Bullion meeting international standards.",
     features: [
       "99.99% purity (24K)",
-      "10kg/day capacity",
-      "Act 2022 compliant",
+      "600kg/day capacity",
       "Investment-grade output",
+      "International standards",
     ],
   },
   {
@@ -69,10 +69,10 @@ const services = [
     subtitle: "The Market",
     image: "/images/dubai-trading.jpg",
     description:
-      "Through our strategic desk at the Dubai Multi Commodities Centre (DMCC), we provide seamless access to the global bullion markets with Tier-1 secure logistics.",
+      "Through our strategic global networks in Dubai, South Africa and Europe, we provide seamless access to the global markets.",
     features: [
-      "DMCC trading desk",
-      "Brinks/G4S logistics",
+      "Global market access",
+      "End-to-end secure logistics",
       "Global buyer network",
       "Real-time pricing",
     ],

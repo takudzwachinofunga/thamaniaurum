@@ -61,19 +61,15 @@ export default function InvestorsPage() {
                   Our Growth Thesis
                 </h2>
                 <p className="text-navy/60 leading-relaxed mb-6 text-lg">
-                  Thamani Aurum is positioned to capitalize on the{" "}
-                  <strong className="text-navy">
-                    Uganda Mining Act 2022
-                  </strong>
-                  , which mandates local value addition and formalizes the $5B+
-                  regional gold market.
+                  Thamani Aurum is strategically positioned to institutionalise
+                  the $5B+ regional gold market. By integrating laboratory
+                  precision, refinery capacity, and direct export desks, we
+                  eliminate third-party friction and capture margins at every
+                  stage.
                 </p>
                 <p className="text-navy/60 leading-relaxed mb-8">
-                  By controlling the laboratory, refinery, and export desk, we
-                  capture margins at every stage of the value chain. Our
-                  vertically integrated model positions us as the sole
-                  institutional gateway for compliant gold exports from the Great
-                  Lakes region.
+                  We serve as the definitive, compliant corridor for
+                  institutional-grade gold exports from the Great Lakes region.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -153,6 +149,40 @@ export default function InvestorsPage() {
                 </p>
               </div>
             </AnimateIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Sourcing and Production Hubs */}
+      <section className="py-20 lg:py-28 bg-light-grey">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <AnimateIn>
+            <div className="text-center mb-16">
+              <span className="text-gold text-xs font-bold tracking-[0.2em] uppercase">
+                Operational Footprint
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mt-4">
+                Our Sourcing and Production Hubs
+              </h2>
+              <div className="w-16 h-0.5 bg-gold mx-auto mt-4" />
+            </div>
+          </AnimateIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {[
+              "Uganda",
+              "Democratic Republic of Congo (DRC)",
+              "Tanzania",
+              "South Sudan",
+            ].map((hub, i) => (
+              <AnimateIn key={i} delay={i * 100}>
+                <div className="bg-white rounded-xl p-6 border-l-4 border-gold hover:shadow-lg transition-all duration-300 text-center">
+                  <p className="font-serif text-lg font-bold text-navy">
+                    {hub}
+                  </p>
+                </div>
+              </AnimateIn>
+            ))}
           </div>
         </div>
       </section>

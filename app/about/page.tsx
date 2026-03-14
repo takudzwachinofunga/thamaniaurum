@@ -119,10 +119,10 @@ export default function AboutPage() {
                   engagement.
                 </p>
                 <p className="text-navy/60 leading-relaxed">
-                  Our Kampala facility equipped with state-of-the-art XRF
-                  (X-Ray Fluorescence) technology provides forensic-grade purity
-                  reports. Every gram undergoes rigorous analysis to ensure
-                  accuracy and compliance with international standards.
+                  Our partner network is equipped with state-of-the-art
+                  technology that provides forensic-grade purity reports. Every
+                  gram undergoes rigorous analysis to ensure accuracy and
+                  compliance with international standards.
                 </p>
               </div>
             </AnimateIn>
@@ -219,7 +219,7 @@ export default function AboutPage() {
               {
                 label: "The Lab",
                 title: "Verification",
-                desc: "Our Kampala-based facility utilizes state-of-the-art XRF (X-Ray Fluorescence) technology to provide laboratory-grade purity reports.",
+                desc: "We offer end-to-end verification from independent scouting, supply chain due diligence, compliance and risk auditing, and general consultation to guarantee risk-averse decisions and transactions.",
                 image: "/images/laboratory.jpg",
               },
               {
@@ -231,13 +231,13 @@ export default function AboutPage() {
               {
                 label: "The Forge",
                 title: "Refining",
-                desc: "Adhering to the Uganda Mining and Minerals Act 2022, our Entebbe refinery converts raw dore into 99.99% (24K) Investment Grade Bullion.",
+                desc: "Adhering to the Uganda Mining Act, our refinery partner network converts raw ore into 99.99% (24k) investment-grade bullion meeting international standards.",
                 image: "/images/refinery.jpg",
               },
               {
                 label: "The Market",
                 title: "Liquidity",
-                desc: "Through our strategic desk at the Dubai Multi Commodities Centre (DMCC), we provide seamless access to the global bullion markets with Tier-1 secure logistics (Brinks/G4S).",
+                desc: "Through our strategic partnerships in Dubai, South Africa & Europe, we provide seamless access to the global bullion markets.",
                 image: "/images/dubai-trading.jpg",
               },
             ].map((item, i) => (
