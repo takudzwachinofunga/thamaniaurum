@@ -211,7 +211,7 @@ export default function InvestorsPage() {
                 active: true,
                 image: "/images/laboratory.jpg",
                 description:
-                  "Forensic XRF assaying and legal due diligence for third-party sellers. Establishing our Kampala laboratory as the regional standard for gold verification.",
+                  "End-to-end verification from independent scouting, supply chain due diligence, compliance and risk auditing, and general consultation. Establishing the regional standard for forensic gold verification.",
                 highlights: [
                   "XRF technology deployed",
                   "Due diligence framework",
@@ -225,10 +225,10 @@ export default function InvestorsPage() {
                 active: false,
                 image: "/images/refinery.jpg",
                 description:
-                  "Commissioning of our 10kg/day chemical refinery in Entebbe to produce 24K bullion. This is the core of our value addition strategy.",
+                  "Commissioning of our 600kg/day chemical refinery to produce 24K bullion meeting international standards. This is the core of our value addition strategy.",
                 highlights: [
-                  "10kg/day capacity",
-                  "Entebbe facility",
+                  "600kg/day capacity",
+                  "Partner network facilities",
                   "24K bullion output",
                 ],
               },
